@@ -10,14 +10,11 @@ import SwiftUI
 struct FrameworkDetailView: View {
     
     var framework: Framework
-    @Binding var isShowingDetailView: Bool
     @State private var isShowingSafariView = false
+    
     var body: some View {
         VStack {
-            XDismissButton(isShowingDetailView: $isShowingDetailView)
-            
-            Spacer()
-            
+                        
             FrameworkTitleView(framework: framework)
             Text(framework.description)
                 .font(.body)
@@ -28,8 +25,14 @@ struct FrameworkDetailView: View {
             Button(action: {
                 isShowingSafariView = true
             }, label: {
-                AFButton(title: "Learn More")
+//                AFButton(title: "Learn More")
+                Label("Learn More", systemImage: "book.fill")
             })
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+//            .foregroundColor(.white)
+//            .buttonBorderShape(.roundedRectangle(radius: 20))
+            .tint(.red)
         }
         .fullScreenCover(isPresented: $isShowingSafariView, content: {
             SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
@@ -38,6 +41,6 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework,isShowingDetailView: .constant(false))
+    FrameworkDetailView(framework: MockData.sampleFramework)
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }
