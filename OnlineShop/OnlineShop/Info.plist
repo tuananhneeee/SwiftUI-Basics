@@ -4,6 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>JetBrainsMonoNL-Italic.ttf</string>
+		<string>JetBrainsMonoNL-SemiBoldItalic.ttf</string>
+		<string>JetBrainsMonoNL-Regular.ttf</string>
+		<string>JetBrainsMonoNL-Bold.ttf</string>
 		<string>Gilroy-Bold.ttf</string>
 		<string>Gilroy-Regular.ttf</string>
 		<string>Gilroy-SemiBold.ttf</string>

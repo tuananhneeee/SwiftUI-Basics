@@ -23,6 +23,8 @@
 		CCA3595A2BBD610B00DDACA7 /* JetBrainsMonoNL-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCA359572BBD610B00DDACA7 /* JetBrainsMonoNL-Regular.ttf */; };
 		CCA3595B2BBD610B00DDACA7 /* JetBrainsMonoNL-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCA359582BBD610B00DDACA7 /* JetBrainsMonoNL-SemiBoldItalic.ttf */; };
 		CCA3595C2BBD610B00DDACA7 /* JetBrainsMonoNL-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCA359592BBD610B00DDACA7 /* JetBrainsMonoNL-Bold.ttf */; };
+		CCEB3F8A2BC13E81008C5AD9 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB3F892BC13E81008C5AD9 /* RoundButton.swift */; };
+		CCEB3F8C2BC13FFE008C5AD9 /* SignInVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB3F8B2BC13FFE008C5AD9 /* SignInVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		CCA359572BBD610B00DDACA7 /* JetBrainsMonoNL-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMonoNL-Regular.ttf"; sourceTree = "<group>"; };
 		CCA359582BBD610B00DDACA7 /* JetBrainsMonoNL-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMonoNL-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		CCA359592BBD610B00DDACA7 /* JetBrainsMonoNL-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMonoNL-Bold.ttf"; sourceTree = "<group>"; };
+		CCEB3F892BC13E81008C5AD9 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		CCEB3F8B2BC13FFE008C5AD9 /* SignInVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				CCA359532BBD605D00DDACA7 /* UIExtension.swift */,
+				CCEB3F892BC13E81008C5AD9 /* RoundButton.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				CCA3594F2BBD58DD00DDACA7 /* WelcomeView.swift */,
+				CCEB3F8B2BC13FFE008C5AD9 /* SignInVIew.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -342,7 +348,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCEB3F8A2BC13E81008C5AD9 /* RoundButton.swift in Sources */,
 				CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */,
+				CCEB3F8C2BC13FFE008C5AD9 /* SignInVIew.swift in Sources */,
 				CCA359542BBD605D00DDACA7 /* UIExtension.swift in Sources */,
 				CCA359502BBD58DD00DDACA7 /* WelcomeView.swift in Sources */,
 			);
