@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2483442BC434790064B922 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = CC2483432BC434790064B922 /* CountryPicker */; };
+		CC2483462BC4349A0064B922 /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2483452BC4349A0064B922 /* CountryPickerUI.swift */; };
 		CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */; };
 		CCA3591D2BBD54DA00DDACA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */; };
 		CCA359202BBD54DA00DDACA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591F2BBD54DA00DDACA7 /* Preview Assets.xcassets */; };
@@ -45,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC2483452BC4349A0064B922 /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
 		CCA359152BBD54D800DDACA7 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopApp.swift; sourceTree = "<group>"; };
 		CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2483442BC434790064B922 /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +201,7 @@
 			children = (
 				CCA359532BBD605D00DDACA7 /* UIExtension.swift */,
 				CCEB3F892BC13E81008C5AD9 /* RoundButton.swift */,
+				CC2483452BC4349A0064B922 /* CountryPickerUI.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -226,6 +231,9 @@
 			dependencies = (
 			);
 			name = OnlineShop;
+			packageProductDependencies = (
+				CC2483432BC434790064B922 /* CountryPicker */,
+			);
 			productName = OnlineShop;
 			productReference = CCA359152BBD54D800DDACA7 /* OnlineShop.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +306,9 @@
 				Base,
 			);
 			mainGroup = CCA3590C2BBD54D800DDACA7;
+			packageReferences = (
+				CC2483422BC434790064B922 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+			);
 			productRefGroup = CCA359162BBD54D800DDACA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2483462BC4349A0064B922 /* CountryPickerUI.swift in Sources */,
 				CCEB3F8A2BC13E81008C5AD9 /* RoundButton.swift in Sources */,
 				CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */,
 				CCEB3F8C2BC13FFE008C5AD9 /* SignInVIew.swift in Sources */,
@@ -690,6 +702,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC2483422BC434790064B922 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/CountryPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC2483432BC434790064B922 /* CountryPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC2483422BC434790064B922 /* XCRemoteSwiftPackageReference "CountryPicker" */;
+			productName = CountryPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCA3590D2BBD54D800DDACA7 /* Project object */;
 }
