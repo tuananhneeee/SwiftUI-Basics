@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC2483442BC434790064B922 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = CC2483432BC434790064B922 /* CountryPicker */; };
 		CC2483462BC4349A0064B922 /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2483452BC4349A0064B922 /* CountryPickerUI.swift */; };
+		CC2483482BC4DCF20064B922 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2483472BC4DCF20064B922 /* LogInView.swift */; };
 		CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */; };
 		CCA3591D2BBD54DA00DDACA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */; };
 		CCA359202BBD54DA00DDACA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591F2BBD54DA00DDACA7 /* Preview Assets.xcassets */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		CC2483452BC4349A0064B922 /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
+		CC2483472BC4DCF20064B922 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		CCA359152BBD54D800DDACA7 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopApp.swift; sourceTree = "<group>"; };
 		CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			children = (
 				CCA3594F2BBD58DD00DDACA7 /* WelcomeView.swift */,
 				CCEB3F8B2BC13FFE008C5AD9 /* SignInVIew.swift */,
+				CC2483472BC4DCF20064B922 /* LogInView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2483462BC4349A0064B922 /* CountryPickerUI.swift in Sources */,
+				CC2483482BC4DCF20064B922 /* LogInView.swift in Sources */,
 				CCEB3F8A2BC13E81008C5AD9 /* RoundButton.swift in Sources */,
 				CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */,
 				CCEB3F8C2BC13FFE008C5AD9 /* SignInVIew.swift in Sources */,

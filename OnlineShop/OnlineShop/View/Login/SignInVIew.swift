@@ -15,7 +15,7 @@ struct SignInVIew: View {
     @State var countryObj: Country?
     
     var body: some View {
-        ZStack (alignment: .top) {
+        ZStack {
             
             Image("bottom_bg")
                 .resizable()
@@ -33,7 +33,7 @@ struct SignInVIew: View {
             
             ScrollView {
                 VStack (alignment: .leading) {
-                    Text("Get to know more about using SwiftUI")
+                    Text("Get to know more about SwiftUI")
                         .font(.customfont(.bold, fontSize: 26))
                         .foregroundColor(.primaryText)
                         .multilineTextAlignment(.leading)
