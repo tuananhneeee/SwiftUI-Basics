@@ -8,10 +8,9 @@
 import SwiftUI
 
 enum Inter: String {
-    case regular = "JetBrainsMonoNL-Regular"
-    case italic = "JetBrainsMonoNL-Italic"
-    case semibold = "JetBrainsMonoNL-SemiBoldItalic"
-    case bold = "JetBrainsMonoNL-Bold"
+    case regular = "Gilroy-Regular"
+    case semibold = "Gilroy-SemiBold"
+    case bold = "Gilroy-Bold"
 }
 
 extension Font {
@@ -118,5 +117,22 @@ extension Color {
             blue:  Double(b) / 255,
             opacity: Double(a) / 255
         )
+    }
+}
+
+struct ShowButton: ViewModifier {
+    @Binding var isShow: Bool
+    
+    public func body(content: Content) -> some View {
+        HStack{
+            content
+            Button {
+                isShow.toggle()
+            } label: {
+                Image(systemName: isShow ? "eye.fill" : "eye.slash.fill")
+                    .foregroundStyle(Color.textTile)
+            }
+
+        }
     }
 }

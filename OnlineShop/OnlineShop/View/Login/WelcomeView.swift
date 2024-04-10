@@ -31,7 +31,7 @@ struct WelcomeView: View {
 
                 
                 Text("Welcome to the test app")
-                    .font(.customfont(.italic, fontSize: 16))
+                    .font(.customfont(.semibold, fontSize: 16))
                     .foregroundColor(.white.opacity(0.7))
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 30)
