@@ -13,6 +13,8 @@
 		CC24834C2BC63F1F0064B922 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24834B2BC63F1F0064B922 /* MainViewModel.swift */; };
 		CC24834E2BC63FF40064B922 /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24834D2BC63FF40064B922 /* LineTextField.swift */; };
 		CC2483502BC8EA590064B922 /* ServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24834F2BC8EA590064B922 /* ServiceCall.swift */; };
+		CC5B60FB2BCD809300974308 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B60FA2BCD809300974308 /* Global.swift */; };
+		CC5B60FE2BCD899600974308 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B60FD2BCD899600974308 /* UIKitExtension.swift */; };
 		CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */; };
 		CCA3591D2BBD54DA00DDACA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */; };
 		CCA359202BBD54DA00DDACA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591F2BBD54DA00DDACA7 /* Preview Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		CC24834B2BC63F1F0064B922 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CC24834D2BC63FF40064B922 /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
 		CC24834F2BC8EA590064B922 /* ServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCall.swift; sourceTree = "<group>"; };
+		CC5B60FA2BCD809300974308 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		CC5B60FD2BCD899600974308 /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
 		CCA359152BBD54D800DDACA7 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopApp.swift; sourceTree = "<group>"; };
 		CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC5B60FC2BCD896800974308 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CC5B60FD2BCD899600974308 /* UIKitExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		CCA3590C2BBD54D800DDACA7 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +141,7 @@
 		CCA359172BBD54D800DDACA7 /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
+				CC5B60FC2BCD896800974308 /* Common */,
 				CCA3594D2BBD588900DDACA7 /* UICommon */,
 				CCA3594C2BBD587000DDACA7 /* ViewModel */,
 				CCA3594B2BBD586300DDACA7 /* View */,
@@ -213,6 +226,7 @@
 				CC2483452BC4349A0064B922 /* CountryPickerUI.swift */,
 				CC24834D2BC63FF40064B922 /* LineTextField.swift */,
 				CC24834F2BC8EA590064B922 /* ServiceCall.swift */,
+				CC5B60FA2BCD809300974308 /* Global.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -377,6 +391,8 @@
 				CCEB3F8A2BC13E81008C5AD9 /* RoundButton.swift in Sources */,
 				CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */,
 				CCEB3F8C2BC13FFE008C5AD9 /* SignInVIew.swift in Sources */,
+				CC5B60FE2BCD899600974308 /* UIKitExtension.swift in Sources */,
+				CC5B60FB2BCD809300974308 /* Global.swift in Sources */,
 				CCA359542BBD605D00DDACA7 /* UIExtension.swift in Sources */,
 				CC2483502BC8EA590064B922 /* ServiceCall.swift in Sources */,
 				CCA359502BBD58DD00DDACA7 /* WelcomeView.swift in Sources */,
