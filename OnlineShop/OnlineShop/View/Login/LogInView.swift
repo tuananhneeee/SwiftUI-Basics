@@ -19,8 +19,27 @@ struct LogInView: View {
                 .scaledToFill()
                 .frame(width: .screenWidth, height: .screenHeight)
             
+            VStack { //back button
+                
+                HStack {
+                    Button {
+                        
+                    } label: {
+                        Image("back")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                    }
+                        
+                    Spacer()
+                }
+                
+                Spacer()
+            }
+            .padding(.top,.topInsets)
+            .padding(.horizontal, 20)
             
-            VStack {
+            VStack { //logo and login
                 
                 
                 Image("color_logo")
@@ -85,25 +104,6 @@ struct LogInView: View {
             .padding(.horizontal, 20)
             .padding(.bottom, .bottomInsets)
             
-            VStack {
-                
-                HStack {
-                    Button {
-                        
-                    } label: {
-                        Image("back")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 20, height: 20)
-                    }
-                        
-                    Spacer()
-                }
-                
-                Spacer()
-            }
-            .padding(.top,.topInsets)
-            .padding(.horizontal, 20)
 
         }
         .alert(isPresented: $loginVM.showError) {

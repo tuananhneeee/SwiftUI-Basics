@@ -16,6 +16,9 @@
 		CC5B60FB2BCD809300974308 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B60FA2BCD809300974308 /* Global.swift */; };
 		CC5B60FE2BCD899600974308 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B60FD2BCD899600974308 /* UIKitExtension.swift */; };
 		CC5B61002BCEC49B00974308 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B60FF2BCEC49B00974308 /* SignUpView.swift */; };
+		CC5B61022BD56F8C00974308 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC5B61012BD56F8C00974308 /* Gilroy-Medium.ttf */; };
+		CC5B61042BD5746100974308 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B61032BD5746100974308 /* UserModel.swift */; };
+		CC5B61072BD57BFD00974308 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B61062BD57BFD00974308 /* MainTabView.swift */; };
 		CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */; };
 		CCA3591D2BBD54DA00DDACA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */; };
 		CCA359202BBD54DA00DDACA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591F2BBD54DA00DDACA7 /* Preview Assets.xcassets */; };
@@ -62,6 +65,9 @@
 		CC5B60FA2BCD809300974308 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		CC5B60FD2BCD899600974308 /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
 		CC5B60FF2BCEC49B00974308 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CC5B61012BD56F8C00974308 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		CC5B61032BD5746100974308 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CC5B61062BD57BFD00974308 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		CCA359152BBD54D800DDACA7 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopApp.swift; sourceTree = "<group>"; };
 		CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +124,14 @@
 				CC5B60FD2BCD899600974308 /* UIKitExtension.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		CC5B61052BD57BED00974308 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				CC5B61062BD57BFD00974308 /* MainTabView.swift */,
+			);
+			path = MainTab;
 			sourceTree = "<group>";
 		};
 		CCA3590C2BBD54D800DDACA7 = {
@@ -188,6 +202,7 @@
 			children = (
 				CCA359432BBD55F600DDACA7 /* Gilroy-Bold.ttf */,
 				CCA359452BBD55F600DDACA7 /* Gilroy-Regular.ttf */,
+				CC5B61012BD56F8C00974308 /* Gilroy-Medium.ttf */,
 				CCA359592BBD610B00DDACA7 /* JetBrainsMonoNL-Bold.ttf */,
 				CCA359572BBD610B00DDACA7 /* JetBrainsMonoNL-Regular.ttf */,
 				CCA359582BBD610B00DDACA7 /* JetBrainsMonoNL-SemiBoldItalic.ttf */,
@@ -200,6 +215,7 @@
 		CCA3594A2BBD585600DDACA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC5B61032BD5746100974308 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +223,7 @@
 		CCA3594B2BBD586300DDACA7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CC5B61052BD57BED00974308 /* MainTab */,
 				CCA3594E2BBD58C500DDACA7 /* Login */,
 			);
 			path = View;
@@ -354,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5B61022BD56F8C00974308 /* Gilroy-Medium.ttf in Resources */,
 				CCA359522BBD5A5700DDACA7 /* Launch Screen.storyboard in Resources */,
 				CCA359482BBD55F600DDACA7 /* Gilroy-Regular.ttf in Resources */,
 				CCA359562BBD610300DDACA7 /* JetBrainsMonoNL-Italic.ttf in Resources */,
@@ -396,11 +414,13 @@
 				CCEB3F8C2BC13FFE008C5AD9 /* SignInVIew.swift in Sources */,
 				CC5B60FE2BCD899600974308 /* UIKitExtension.swift in Sources */,
 				CC5B60FB2BCD809300974308 /* Global.swift in Sources */,
+				CC5B61042BD5746100974308 /* UserModel.swift in Sources */,
 				CC5B61002BCEC49B00974308 /* SignUpView.swift in Sources */,
 				CCA359542BBD605D00DDACA7 /* UIExtension.swift in Sources */,
 				CC2483502BC8EA590064B922 /* ServiceCall.swift in Sources */,
 				CCA359502BBD58DD00DDACA7 /* WelcomeView.swift in Sources */,
 				CC24834C2BC63F1F0064B922 /* MainViewModel.swift in Sources */,
+				CC5B61072BD57BFD00974308 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

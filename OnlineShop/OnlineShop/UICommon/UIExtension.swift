@@ -11,6 +11,7 @@ enum Inter: String {
     case regular = "Gilroy-Regular"
     case semibold = "Gilroy-SemiBold"
     case bold = "Gilroy-Bold"
+    case medium = "Gilroy-Medium"
 }
 
 extension Font {
