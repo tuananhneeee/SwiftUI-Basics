@@ -63,15 +63,21 @@ struct LogInView: View {
                 }
                     .padding(.bottom, .screenWidth * 0.05)
                 
-                HStack {
-                    Text("Don't have an account yet?")
-                        .font(.customfont(.semibold, fontSize: 14))
-                        .foregroundStyle(Color.primaryText)
+                NavigationLink {
+                    SignUpView()
+                } label: {
                     
-                    Text("Sign Up")
-                        .font(.customfont(.semibold, fontSize: 14))
-                        .foregroundStyle(Color.primaryApp)
+                    HStack {
+                        Text("Don't have an account yet?")
+                            .font(.customfont(.semibold, fontSize: 14))
+                            .foregroundStyle(Color.primaryText)
+                        
+                        Text("Sign Up")
+                            .font(.customfont(.semibold, fontSize: 14))
+                            .foregroundStyle(Color.primaryApp)
+                    }
                 }
+
 
                 Spacer()
             }
@@ -113,6 +119,12 @@ struct LogInView: View {
     }
 }
 
-#Preview {
-    LogInView()
+
+struct LogInVIew_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        NavigationView {
+            LogInView()
+        }
+    }
 }

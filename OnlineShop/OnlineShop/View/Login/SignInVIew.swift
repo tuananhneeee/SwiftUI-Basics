@@ -60,6 +60,31 @@ struct SignInVIew: View {
                             .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity)
                     }
                     
+                    NavigationLink {
+                        LogInView()
+                    } label: {
+                        Text("Continue with your Email")
+                            .font(.customfont(.regular, fontSize: 18))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: 60, maxHeight: 60)
+                    .background(Color(hex: "5383EC"))
+                    .clipShape(RoundedRectangle(cornerRadius: 20,style: .continuous))
+                    .padding(.bottom, 8)
+                    
+                    NavigationLink {
+                        SignUpView()
+                    } label: {
+                        Text("Continue with your new Email")
+                            .font(.customfont(.regular, fontSize: 18))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: 60, maxHeight: 60)
+                    .background(Color.primaryApp)
+                    .clipShape(RoundedRectangle(cornerRadius: 20,style: .continuous))
+                    .padding(.bottom, 8)
                     
                     
                     Divider()
@@ -109,7 +134,7 @@ struct SignInVIew: View {
                 }
                 .padding(.horizontal, 20)
                 .frame(width: .screenWidth, alignment: .leading)
-                .padding(.top, .topInsets + .screenWidth )
+                .padding(.top, .topInsets + .screenWidth * 0.6)
             }
         }
         .onAppear{
