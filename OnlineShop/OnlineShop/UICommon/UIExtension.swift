@@ -72,7 +72,7 @@ extension CGFloat {
 extension Color {
     
     static var primaryApp: Color {
-        return Color(hex: "53B175")
+        return Color(hex: "eb4034")
     }
     
     static var primaryText: Color {

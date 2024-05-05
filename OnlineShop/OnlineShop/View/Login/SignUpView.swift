@@ -129,6 +129,8 @@ struct SignUpView: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
         .ignoresSafeArea()
+        .tint(Color.accentColor)
+
     }
 }
 

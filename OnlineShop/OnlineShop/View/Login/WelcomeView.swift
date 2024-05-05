@@ -50,6 +50,7 @@ struct WelcomeView: View {
             .padding(.horizontal, 20)
         }
         .ignoresSafeArea()
+        .tint(Color.accentColor)
     }
 }
 
