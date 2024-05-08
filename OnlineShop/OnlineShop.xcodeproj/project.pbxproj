@@ -27,6 +27,9 @@
 		CC9BF1112BE505500067A113 /* SectionTitleAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9BF1102BE505500067A113 /* SectionTitleAll.swift */; };
 		CC9BF1132BE5EB010067A113 /* ItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9BF1122BE5EB010067A113 /* ItemsCell.swift */; };
 		CC9BF1152BE63F740067A113 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9BF1142BE63F740067A113 /* CategoryCell.swift */; };
+		CC9BF1172BE8D0D30067A113 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9BF1162BE8D0D30067A113 /* ProductModel.swift */; };
+		CC9BF11B2BEA1FB40067A113 /* TypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9BF11A2BEA1FB40067A113 /* TypeModel.swift */; };
+		CC9BF11E2BEA28B50067A113 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CC9BF11D2BEA28B50067A113 /* SDWebImageSwiftUI */; };
 		CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */; };
 		CCA3591D2BBD54DA00DDACA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */; };
 		CCA359202BBD54DA00DDACA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3591F2BBD54DA00DDACA7 /* Preview Assets.xcassets */; };
@@ -84,6 +87,8 @@
 		CC9BF1102BE505500067A113 /* SectionTitleAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleAll.swift; sourceTree = "<group>"; };
 		CC9BF1122BE5EB010067A113 /* ItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCell.swift; sourceTree = "<group>"; };
 		CC9BF1142BE63F740067A113 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		CC9BF1162BE8D0D30067A113 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		CC9BF11A2BEA1FB40067A113 /* TypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeModel.swift; sourceTree = "<group>"; };
 		CCA359152BBD54D800DDACA7 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA359182BBD54D800DDACA7 /* OnlineShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopApp.swift; sourceTree = "<group>"; };
 		CCA3591C2BBD54DA00DDACA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9BF11E2BEA28B50067A113 /* SDWebImageSwiftUI in Frameworks */,
 				CC2483442BC434790064B922 /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				CC5B61032BD5746100974308 /* UserModel.swift */,
+				CC9BF1162BE8D0D30067A113 /* ProductModel.swift */,
+				CC9BF11A2BEA1FB40067A113 /* TypeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +327,7 @@
 			name = OnlineShop;
 			packageProductDependencies = (
 				CC2483432BC434790064B922 /* CountryPicker */,
+				CC9BF11D2BEA28B50067A113 /* SDWebImageSwiftUI */,
 			);
 			productName = OnlineShop;
 			productReference = CCA359152BBD54D800DDACA7 /* OnlineShop.app */;
@@ -394,6 +403,7 @@
 			mainGroup = CCA3590C2BBD54D800DDACA7;
 			packageReferences = (
 				CC2483422BC434790064B922 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+				CC9BF11C2BEA28450067A113 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CCA359162BBD54D800DDACA7 /* Products */;
 			projectDirPath = "";
@@ -453,6 +463,8 @@
 				CC5B61092BD7507600974308 /* HomeViewModel.swift in Sources */,
 				CCEB3F8A2BC13E81008C5AD9 /* RoundButton.swift in Sources */,
 				CC5B610C2BD7516600974308 /* HomeView.swift in Sources */,
+				CC9BF11B2BEA1FB40067A113 /* TypeModel.swift in Sources */,
+				CC9BF1172BE8D0D30067A113 /* ProductModel.swift in Sources */,
 				CCA359192BBD54D800DDACA7 /* OnlineShopApp.swift in Sources */,
 				CCEB3F8C2BC13FFE008C5AD9 /* SignInVIew.swift in Sources */,
 				CC5B60FE2BCD899600974308 /* UIKitExtension.swift in Sources */,
@@ -816,6 +828,14 @@
 				minimumVersion = 2.0.3;
 			};
 		};
+		CC9BF11C2BEA28450067A113 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -823,6 +843,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CC2483422BC434790064B922 /* XCRemoteSwiftPackageReference "CountryPicker" */;
 			productName = CountryPicker;
+		};
+		CC9BF11D2BEA28B50067A113 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC9BF11C2BEA28450067A113 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

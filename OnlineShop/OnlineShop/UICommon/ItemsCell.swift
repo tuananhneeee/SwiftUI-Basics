@@ -6,26 +6,29 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ItemsCell: View {
-    
+    @State var pObj: ProductModel = ProductModel(dict: [:])
     var didAddCart: ( ()->() )?
     
     var body: some View {
         VStack {
             
-            Image("color_logo")
+                WebImage(url: URL(string: pObj.image))
                 .resizable()
+                .indicator(.activity) // Activity Indicator
+                .transition(.fade(duration: 0.5)) // Fade Transition with duration
                 .scaledToFit()
-                .frame(width: 100, height: 80)
+                .frame(width: 100, height: 100)
             
             Spacer()
             
-            Text("Carrot")
+            Text(pObj.name)
                 .font(.customfont(.semibold, fontSize: 16))
                 .foregroundStyle(Color.primaryText)
                 .frame(minWidth: 0,maxWidth: .infinity, alignment: .leading)
-            Text("1 pc, price")
+            Text("\(pObj.unitValue)\(pObj.unitName), price")
                 .font(.customfont(Inter.regular, fontSize: 14))
                 .foregroundStyle(Color.secondaryText)
                 .frame(minWidth: 0,maxWidth: .infinity, alignment: .leading)
@@ -33,7 +36,7 @@ struct ItemsCell: View {
             Spacer()
             
             HStack {
-                Text("100k VND")
+                Text("\(pObj.offerPrice ?? pObj.price, specifier: "%.2f")")
                     .font(.customfont(.semibold, fontSize: 18))
                     .foregroundStyle(Color.primaryText)
                     .frame(minWidth: 0,maxWidth: .infinity, alignment: .leading)
@@ -65,5 +68,20 @@ struct ItemsCell: View {
 }
 
 #Preview {
-    ItemsCell()
+    ItemsCell(pObj: ProductModel(dict: [                "prod_id": 10,
+                                                        "cat_id": 1,
+                                                        "brand_id": 1,
+                                                        "type_id": 1,
+                                                        "name": "Bell Peppers",
+                                                        "detail": "Bell peppers (Capsicum annuum) are fruits that belong to the nightshade family. They are low in calories and rich in vitamin C and other antioxidants, making them an excellent addition to a healthy diet.",
+                                                        "unit_name": "gm",
+                                                        "unit_value": "250",
+                                                        "nutrition_weight": "100g",
+                                                        "price": 1.99,
+                                                        "image": "http://localhost:3001/img/product/20230731101409149FomkojOsMt.png",
+                                                        "cat_name": "Frash Fruits & Vegetable",
+                                                        "type_name": "Pulses",
+                                                        "is_fav": 1])) {
+        
+    }
 }
